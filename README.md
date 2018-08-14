@@ -12,11 +12,4 @@ The inference is evaluated on NVIDIA Jetson TX2 platform. We used multithreading
 
 **Note:**  
 
-We develop two projects for different purposes in this repository.
-
-## Installation
-
-*Prerequisites:*
- * OpenCV
- * CUDA/cuDNN
- * Python2/Python2-Numpy
+We develop three projects for different purposes in this repository, YOLOv2, tiny-YOLOv2 and YOLOv2_v_4 model are deployed respectively  to compare the performance of combined techniques.  

@@ -1,6 +1,6 @@
 # dark-fonlmaf
 ## Introduction
-This repository contains the proposed optimization techniques for yolov2 network and the solutions for 4-channel input layer.
+This repository contains the proposed optimization techniques for real-time object detection networks and and the solutions for 4-channel input layer.
 
 We try to deploy a object detection mpodel based on [YOLOv2-Tiny detector](https://pjreddie.com/darknet/yolov2/), which consists of a backbone network for feature extraction and a detection network for candidate bounding box generation.
 In order to address the of tiny objects, occlusions and distractions from the provided data set, various optimizations are implemented on the network architecture for both training and inference.

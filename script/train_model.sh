@@ -2,7 +2,7 @@
 
 
 # change it to $TRAIN_ROOT
-train_root=/home/djn/projects/DAC-Contest/DACSDC-DeepZ/Train
+proj_home=/home/projects/dark-fonlmaf
 
 # set the path of training cfg file
 tr_cfg_path=${train_root}/cfg/train.cfg
@@ -21,7 +21,7 @@ valid_path=${data_root}/dataset/valid_dataset.txt
 valid_gt_path=${data_root}/dataset/valid_dataset_label.txt
 
 # set the name of the model
-model_name=yolo_tiny_dacsdc
+model_name=yolo_tiny
 # set the path to store trained models
 model_path=${train_root}/model
 # set the path of the logging file of validation

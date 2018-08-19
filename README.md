@@ -4,7 +4,7 @@ This repository contains the proposed optimization techniques for real-time obje
 
 We try to deploy a object detection mpodel based on [YOLOv2-Tiny detector](https://pjreddie.com/darknet/yolov2/), which consists of a backbone network for feature extraction and a detection network for candidate bounding box generation.
 In order to address the problem of tiny objects, occlusions and distractions from the provided data set, various optimizations are implemented on the network architecture for both training and inference.
-The 
+We use [Feature Pyramid Network](https://arxiv.org/abs/1612.03144v2) with a top-down architecture for building high-level semantic feature maps at multiple scales.
 In the focus layer, the [Focal Loss](https://arxiv.org/abs/1708.02002) is applied to  mitigate the imbalance between the single ground truth box and the candidate boxes at training phase,  thereby partially resolving occlusions and distractions. We remove the classification function on this layer, and there are only locations and confidence information in the anchor box.
 
 Moreover, we propose an extended data layer, which contains 4 channels instead of 3 channels for orignal RGB images. It derives from the deep learning architecture on hardware platform such as FPGA and ASIC, in which the parallel convolution computing unit are normally designed with even number of channels. The extended data layer eliminates the resource waste on the first layer, and meanwhile brings a slightly performacne improvement.
@@ -64,7 +64,7 @@ bash train_yolov2_c_4.sh
 ```
 
 ## Validation
-1. Configurate the project path in `$PROJECT_ROOT/script/valid_model.sh`.
+1. Validate the model trained by ourself. Configurate the project path in `$PROJECT_ROOT/script/valid_model.sh`.
 ```Shell
 cd $PROJECT_ROOT/script
 bash valid_model.sh

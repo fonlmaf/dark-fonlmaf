@@ -2,7 +2,7 @@
 
 
 # change it to $TRAIN_ROOT
-proj_home=/home/projects/dark-fonlmaf
+train_root=/home/projects/dark-fonlmaf
 
 # set the path of training cfg file
 tr_cfg_path=${train_root}/cfg/train.cfg

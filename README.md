@@ -43,7 +43,7 @@ make -j8
 
 1. Download the COCO raw dataset, annotations and metadata (about 120000 images and the correspounding labels in total).
 ```Shell
-cd $TRAIN_ROOT/data
+cd $PROJECT_ROOT/data
 sh get_coco_data.sh
 ```
 

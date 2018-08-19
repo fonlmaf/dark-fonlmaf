@@ -8,8 +8,6 @@ train_root=/home/projects/dark-fonlmaf
 tr_cfg_path=${train_root}/cfg/train.cfg
 # set the path of validation cfg file
 va_cfg_path=${train_root}/cfg/valid.cfg
-# set the path of initial weights
-weights_path=${train_root}/model/yolov3_tiny_COCO.conv.weights
 
 # set the root path of data
 data_root=${train_root}/data
@@ -38,7 +36,6 @@ nohup \
 	-i 0 \
 	-tr_cfg ${tr_cfg_path} \
 	-va_cfg ${va_cfg_path} \
-	-weights ${weights_path} \
 	-tr_dir ${train_path} \
 	-va_dir ${valid_path} \
 	-va_gt_dir ${valid_gt_path} \

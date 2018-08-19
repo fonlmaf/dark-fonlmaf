@@ -2,12 +2,12 @@
 
 
 # change it to $TRAIN_ROOT
-train_root=/home/djn/projects/DAC-Contest/DACSDC-DeepZ/Train
+train_root=/home/projects/dark-fonlmaf
 
 # set the path of validation cfg file
 va_cfg_path=${train_root}/cfg/valid.cfg
 # set the path of initial weights
-weights_path=${train_root}/model/yolo_tiny_dacsdc_best.weights
+weights_path=${train_root}/model/yolo_tiny_dacsdc.weights
 
 # set the root path of datax
 data_root=${train_root}/data

@@ -2,7 +2,7 @@
 
 
 # set the path of project root
-proj_home=/home/djn/projects/DAC-Contest/DACSDC-DeepZ/Train
+proj_home=/home/projects/dark-fonlmaf
 
 # set the path of training cfg
 tr_cfg_path=${proj_home}/cfg/train1.cfg
